@@ -13,12 +13,11 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 /**
- * @author		Noam Vaknin <noamvak765@gmail.com>
- * @version	1.6 (current version number of program) - I don't know exac what to do here
- * @since		21/8/2016 (the date of the package the class was added)
  *
+ * @author Noam Vaknin <noamvak765@gmail.com>
+ * @version 1.6 (current version number of program) - I don't know exac what to do here
+ * @since 21 /8/2016 (the date of the package the class was added)
  */
-
 public class MainActivity extends AppCompatActivity {
     AlertDialog.Builder adb;
     LinearLayout lL;
