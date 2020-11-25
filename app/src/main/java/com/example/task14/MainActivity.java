@@ -4,8 +4,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -27,6 +30,22 @@ public class MainActivity extends AppCompatActivity {
 
         lL=(LinearLayout)findViewById(R.id.lL);
 
+    }
+
+
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        String choice=item.getTitle().toString();
+        if(choice.equals("Credit Activity")){
+            Intent res=new Intent(this,CreditAct.class);
+            startActivity(res);
+        }
+
+        return true;
     }
 
     /**
