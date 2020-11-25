@@ -9,9 +9,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+/**
+ * @author		Noam Vaknin <noamvak765@gmail.com>
+ * @version	1.6 (current version number of program) - I don't know exac what to do here
+ * @since		21/8/2016 (the date of the package the class was added)
+ *
+ */
+
 public class MainActivity extends AppCompatActivity {
-AlertDialog.Builder adb;
-LinearLayout lL;
+    AlertDialog.Builder adb;
+    LinearLayout lL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +29,11 @@ LinearLayout lL;
 
     }
 
+    /**
+     * Only message. - opens an Alert Dialogue with a message
+     *
+     * @param view the view
+     */
     public void onlyMessage(View view) {
         adb=new AlertDialog.Builder(this);
 
@@ -32,6 +44,11 @@ LinearLayout lL;
         ad.show();
     }
 
+    /**
+     * Msg and img. - opens an Alert Dialogue with a message and an Image
+     *
+     * @param view the view
+     */
     public void Msg_And_Img(View view) {
         adb=new AlertDialog.Builder(this);
 
@@ -43,6 +60,11 @@ LinearLayout lL;
         ad.show();
     }
 
+    /**
+     * Msg with btn and img. -  opens an Alert Dialogue with message button and Image
+     *
+     * @param view the view
+     */
     public void msg_with_btn_AndImg(View view) {
         adb=new AlertDialog.Builder(this);
 
@@ -60,6 +82,11 @@ LinearLayout lL;
         ad.show();
     }
 
+    /**
+     * Color changer 1. - opens an Alert Dialogue with a button that change the screen to a random color
+     *
+     * @param view the view
+     */
     public void colorChanger1(View view) {
         adb=new AlertDialog.Builder(this);
 
@@ -84,6 +111,13 @@ LinearLayout lL;
         ad.show();
     }
 
+    /**
+     * Color changer 2.- opens an Alert Dialogue with 3 buttons. one exits the Alert Dialogue
+     * second resets the screen color back to white
+     * third changes the screen to a random color
+     *
+     * @param view the view
+     */
     public void colorChanger2(View view) {
         adb=new AlertDialog.Builder(this);
 
